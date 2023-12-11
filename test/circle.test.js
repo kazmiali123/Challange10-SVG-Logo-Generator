@@ -1,5 +1,7 @@
+// import the Circle class in this page to test
 const Circle = require('../lib/circle');
 
+// will test if the render() function on this class's instantiated object will return the desired svg String literal.
 describe('Circle', () => {
     test('should render a svg string literal using the Circle class', () => {
         const expectedSVG = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
