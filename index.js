@@ -78,10 +78,10 @@ inquirer
 })
 .then ((svgString)=> {
     fs.writeFile('./output/logo.svg', svgString, (err) =>
-      err ? console.log(err) : console.log('Success!')
+      err ? console.log(err) : console.log('Generated logo.svg, in the output folder')
     );
+})
+.catch((error) => {
+    console.log(error);
+    console.log('unable to write a svg file');
 });
-
-
-
-
